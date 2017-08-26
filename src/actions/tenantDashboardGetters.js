@@ -4,7 +4,7 @@ export const FETCH_RENT = 'fetch_rent_total_due';
 export const FETCH_MESSAGES = 'fetch_messages_for_tenant_user';
 export const FETCH_DOCS = 'fetch_docs_for_tenant_user';
 
-const ROOT_URL = 'http://127.0.0.1:3302/' // get user's rent url
+const ROOT_URL = 'http://127.0.0.1:3302' // get user's rent url
 
 export function getRentDue(id) {
 	const request = axios.get(`${ROOT_URL}/rent`, {params: {id: id}})
